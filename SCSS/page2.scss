@@ -1,0 +1,235 @@
+@import "reset";
+
+$color1: #56C4C5;
+$color2: #221E1F;
+$color3: #747474;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+.df {
+    display: flex;;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 16px;
+    &-orange {
+        padding: 0.5rem 2rem;
+        background-color: #FF5D50;
+        border-radius: 1.375rem;
+    }
+    &-green {
+        padding: 0.75rem 2rem;
+        background-color: $color1;
+        border-radius: 1.6875rem;
+        font-size: 18px;        
+    }
+    &-white {
+        padding: 0.75rem 2rem;
+        background-color: #FFFFFF;
+        border: 1px solid $color1;
+        border-radius: 1.6875rem;
+        color:  $color1;
+        font-size: 18px; 
+    }
+}
+
+.container {
+    position: relative;
+    padding: 0 10%;    
+    background: #F7F9FD 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 0px 300px;
+    margin-bottom: 100px;
+    z-index: -1;
+}
+
+.top {
+    width: 71px;
+    height: 71px;
+    border-radius: 50%;
+    background: $color1;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+    a {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+}
+
+.header {
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    .bg-img {
+        max-width: 100%;
+        max-height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    .logo {
+        align-items: center;
+        z-index: 3;
+    }
+    .pic {
+        height: 2.5rem;
+    }
+}
+
+.banner {
+    z-index: auto;
+    .text1 {
+        margin-top: 92px;
+        margin-bottom: 16px;
+        text-align: left;
+        font-size: 3rem;
+        font-weight: bold;
+        color: $color2;
+    }
+    .text2 {
+        text-align: left;
+        font-size: 1rem;
+        color: $color2;
+        padding-bottom: 180px;
+    }
+}
+
+.payment {
+    max-width: 909px;
+    margin: 100px auto;
+    .text3 {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        color: $color2;
+        margin-bottom: 48px;
+    }
+    .price {
+        margin: 0 auto;
+        justify-content: center;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        a {
+            margin-right: 16px;
+            &:hover {
+                background-color: $color1;
+                border: 1px solid $color1;
+                color:  white;
+            }
+        }
+    }
+    .project {
+        justify-content: space-between;
+        
+    }
+}
+
+@media (max-width:768px) {
+    .wrap {
+        position: relative;
+    }
+    
+    .container {
+        padding: 0 10%;    
+        background: #F7F9FD 0% 0% no-repeat padding-box;
+        border-radius: 0px 0px 0px 300px;
+        margin-bottom: 100px;
+    }
+    
+    .top {
+        width: 71px;
+        height: 71px;
+        border-radius: 50%;
+        background: $color1;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        right: 50px;
+        bottom: 20px;
+        a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
+    
+    .header {
+        justify-content: space-between;
+        padding: 1.5rem 0;
+        .bg-img {
+            max-width: 100%;
+            max-height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                z-index: -1;
+            }
+        }
+    }
+    
+    .banner {
+        .text1 {
+            margin-top: 92px;
+            margin-bottom: 16px;
+            text-align: left;
+            font-size: 3rem;
+            font-weight: bold;
+            color: $color2;
+        }
+        .text2 {
+            text-align: left;
+            font-size: 1rem;
+            color: $color2;
+            padding-bottom: 180px;
+        }
+    }
+    
+    .payment {
+        max-width: 909px;
+        margin: 100px auto;
+        .text3 {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: $color2;
+            margin-bottom: 48px;
+        }
+        .price {
+            margin: 0 auto;
+            justify-content: center;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            a {
+                margin-right: 16px;
+                &:hover {
+                    background-color: $color1;
+                    border: 1px solid $color1;
+                    color:  white;
+                }
+            }
+        }
+        .project {
+            justify-content: space-between;
+            
+        }
+    }
+}

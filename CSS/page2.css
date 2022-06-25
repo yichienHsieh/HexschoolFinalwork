@@ -1,0 +1,321 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.5;
+}
+
+.df {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-orange {
+  padding: 0.5rem 2rem;
+  background-color: #FF5D50;
+  border-radius: 1.375rem;
+}
+
+.btn-green {
+  padding: 0.75rem 2rem;
+  background-color: #56C4C5;
+  border-radius: 1.6875rem;
+  font-size: 18px;
+}
+
+.btn-white {
+  padding: 0.75rem 2rem;
+  background-color: #FFFFFF;
+  border: 1px solid #56C4C5;
+  border-radius: 1.6875rem;
+  color: #56C4C5;
+  font-size: 18px;
+}
+
+.container {
+  position: relative;
+  padding: 0 10%;
+  background: #F7F9FD 0% 0% no-repeat padding-box;
+  border-radius: 0px 0px 0px 300px;
+  margin-bottom: 100px;
+  z-index: -1;
+}
+
+.top {
+  width: 71px;
+  height: 71px;
+  border-radius: 50%;
+  background: #56C4C5;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  right: 50px;
+  bottom: 20px;
+}
+
+.top a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.header {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5rem 0;
+}
+
+.header .bg-img {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.header .bg-img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.header .logo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 3;
+}
+
+.header .pic {
+  height: 2.5rem;
+}
+
+.banner {
+  z-index: auto;
+}
+
+.banner .text1 {
+  margin-top: 92px;
+  margin-bottom: 16px;
+  text-align: left;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #221E1F;
+}
+
+.banner .text2 {
+  text-align: left;
+  font-size: 1rem;
+  color: #221E1F;
+  padding-bottom: 180px;
+}
+
+.payment {
+  max-width: 909px;
+  margin: 100px auto;
+}
+
+.payment .text3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #221E1F;
+  margin-bottom: 48px;
+}
+
+.payment .price {
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.payment .price a {
+  margin-right: 16px;
+}
+
+.payment .price a:hover {
+  background-color: #56C4C5;
+  border: 1px solid #56C4C5;
+  color: white;
+}
+
+.payment .project {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    position: relative;
+  }
+  .container {
+    padding: 0 10%;
+    background: #F7F9FD 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 0px 300px;
+    margin-bottom: 100px;
+  }
+  .top {
+    width: 71px;
+    height: 71px;
+    border-radius: 50%;
+    background: #56C4C5;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+  }
+  .top a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  .header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1.5rem 0;
+  }
+  .header .bg-img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .header .bg-img img {
+    max-width: 100%;
+    max-height: 100%;
+    z-index: -1;
+  }
+  .banner .text1 {
+    margin-top: 92px;
+    margin-bottom: 16px;
+    text-align: left;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #221E1F;
+  }
+  .banner .text2 {
+    text-align: left;
+    font-size: 1rem;
+    color: #221E1F;
+    padding-bottom: 180px;
+  }
+  .payment {
+    max-width: 909px;
+    margin: 100px auto;
+  }
+  .payment .text3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #221E1F;
+    margin-bottom: 48px;
+  }
+  .payment .price {
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .payment .price a {
+    margin-right: 16px;
+  }
+  .payment .price a:hover {
+    background-color: #56C4C5;
+    border: 1px solid #56C4C5;
+    color: white;
+  }
+  .payment .project {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+/*# sourceMappingURL=page2.css.map */
